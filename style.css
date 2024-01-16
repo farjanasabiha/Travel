@@ -4,9 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-section, header{
-    width: 1140px;
+section, header, .footer{
+    max-width: 1140px;
     margin: 0px auto;
+}
+
+body{
     font-family: 'Mulish', sans-serif;
 }
 .common-title{
@@ -36,7 +39,7 @@ section, header{
     color: #FFF;
     text-align: center;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 600;
     padding: 15px 35px;
     border: none;
 }
@@ -97,7 +100,7 @@ nav .menu ul li a:hover{
     background-size: cover;
     min-height: 500px;
     border-radius: 16px;
-    padding: 106px 185px;
+    padding: 106px 160px;
     text-align: center;
 }
 .header-wrapper h1{
@@ -113,15 +116,16 @@ nav .menu ul li a:hover{
     line-height: 26px;
     width: 676px;
     padding-bottom: 48px;
+    margin: 0px auto;
 }
 .buttons{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    padding: 16px;
+    padding: 16px 0px;
     gap: 25px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .buttons input, select{
     color: rgba(19, 19, 24, 0.50);
@@ -137,7 +141,7 @@ nav .menu ul li a:hover{
     outline: none;
 }
 
-.buttons button{
+.buttons button {
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -212,8 +216,9 @@ nav .menu ul li a:hover{
     text-align: center;
     font-size: 28px;
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-weight: 800;
 
 }
@@ -234,10 +239,6 @@ nav .menu ul li a:hover{
 .row-two .north-america{
     width: 474px;
 }
-
-.row-two .north-america p{
-    left: 33%;
-}
 .row-two .kashmir{
     width: 274px;
 }
@@ -253,7 +254,6 @@ nav .menu ul li a:hover{
 }
 .choose-item{
     padding: 32px;
-    width: 573px;
 }
 
 .choose-item h3{
@@ -269,17 +269,20 @@ nav .menu ul li a:hover{
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    width: 486px;
+    width: 100%;
 }
 .choose-item-one{
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
+    width: 50%;
 }
 .choose-item-two{
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
+    width: 50%;
+
 }
 .choose-item-three{
     margin: 0px auto;
@@ -288,6 +291,7 @@ nav .menu ul li a:hover{
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
+    width: 60%;
 }
 /* Choose section End */
 
@@ -386,11 +390,62 @@ nav .menu ul li a:hover{
     margin-top: 32px;
 }
 /* Discounts section End */
+/*========================== blog ==========================*/
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 80px;
+  }
+  
+  .blog-item {
+    width: 33%;
+  }
+  
 
+  .bloger-pic img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .bloger-pic {
+    overflow: hidden;
+    
+  }
+  
+  .blog-item:hover .bloger-pic img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .blog .blog-item h4 {
+    color: #131318;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    padding-top: 20px;
+    transition: 0.5s ease;
+  }
+  
+  .blog-item:hover .blog-content h4 {
+    color: rgb(255, 84, 0);
+  }
+  
+  .blog .blog-item p {
+    color: #9b9eac;
+    font-family: "Barlow";
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
 /* Newsletter section Start */
 .newsletter{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 25px;
 }
@@ -398,6 +453,7 @@ nav .menu ul li a:hover{
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 40px;
+    width: 40%;
 
 }
 
@@ -426,17 +482,17 @@ nav .menu ul li a:hover{
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: 400;
-    width: 393px;
     padding: 15px 20px;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     border: none;
+    width: 100%;
 }
 .newsletter-left input:focus{
     outline: none;
 }
 .newsletter-left button{
-    width: 393px;
+    width: 100%;
     color: #FFF;
     text-align: center;
     font-size: 20px;
@@ -448,6 +504,11 @@ nav .menu ul li a:hover{
 }
 .newsletter-right{
     position: relative;
+    width: 60%;
+}
+.newsletter-right img{
+    width: 100%;
+    height: 100%;
 }
 .newsletter-right .save{
     border-radius: 16px;
@@ -537,11 +598,9 @@ footer h6{
 
 
 /* Responsive Design  */
-@media screen and (min-width:601px) and (max-width:1170px){
 
-}
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:992px) {
     section, header{
         width: 85%;
         margin: 0px auto;
@@ -600,10 +659,6 @@ footer h6{
     }
     .choose-card {
         flex-direction: column;
-    }
-    .destination-item p {
-        top: 40%;
-        left: 31%;
     }
     .hidden-p{
         display: block;
@@ -691,13 +746,24 @@ footer h6{
     .row-two .north-america {
         width: 100%;
     }
-    .row-two .north-america p {
-        left: 22%;
-    }
     .buttons input, select {
         width: 95%;
     }
     .buttons button {
         width: 95%;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .blog-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .newsletter-left{
+        width: 100%;
+    }
+    .newsletter-right{
+        width: 100%;
     }
 }
