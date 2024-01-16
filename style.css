@@ -16,6 +16,9 @@ section, header{
     font-weight: 800;
     padding-bottom: 24px;
 }
+.toggle{
+    display: none;
+}
 .common-p{
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
@@ -91,8 +94,8 @@ nav .menu ul li a:hover{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/Group 13 (1) (1).png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
+    background-size: cover;
+    min-height: 500px;
     border-radius: 16px;
     padding: 106px 185px;
     text-align: center;
@@ -138,12 +141,11 @@ nav .menu ul li a:hover{
     color: #FFF;
     text-align: center;
     font-size: 16px;
+    border: none;
     font-weight: 700;
     border-radius: 8px;
     background: #FF5400;
     padding: 15px 22px;
-    bottom: none;
-    order: none;
 }
 
 /* tours Start  */
@@ -166,7 +168,16 @@ nav .menu ul li a:hover{
     font-weight: 400;
     line-height: 26px;
 }
-
+.tour-right{
+    width: 45%;
+}
+.tour-left{
+    width: 45%;
+}
+.tour-right img{
+    width: 100%;
+    height: 100%;
+}
 .tours .bottom-p{
     color: #5A5A5D;
     padding: 25px 0px 35px 0px;
@@ -298,6 +309,11 @@ nav .menu ul li a:hover{
 .discount-card-three{
     background: url(./Images/Group\ 39.png), lightgray 50% / cover no-repeat;
 }
+.discount-btn{
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+}
 .icon-date i {
     width: 24px;
     height: 24px;
@@ -320,6 +336,9 @@ nav .menu ul li a:hover{
     position: relative;
     margin-bottom: 25px;
 }
+.hidden-p{
+    display: none;
+}
 .discount-item{
     border-radius: 16px;
     border: 2px solid #FFF;
@@ -336,6 +355,12 @@ nav .menu ul li a:hover{
     top: 55px;
     left: 55px;
 
+}
+.discount-flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
 }
 .discount-item h4{
     color: #131318;
@@ -508,3 +533,171 @@ footer h6{
 }
 
 /* Footer Start */
+
+
+
+/* Responsive Design  */
+@media screen and (min-width:601px) and (max-width:1170px){
+
+}
+
+@media screen and (max-width:600px) {
+    section, header{
+        width: 85%;
+        margin: 0px auto;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .logo h2 {
+        font-size: 25px;
+    }
+    .tours h2 {
+        font-size: 30px;
+    }
+    .tours p {
+        font-size: 13px;
+    }
+    .tours ul li {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .tours {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .tour-right img{
+        width: 100%;
+        height: 100%;
+    }
+    .common-title {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    .common-p {
+        font-size: 13px;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .row-one, .row-two, .row-three {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .destination-item {
+        width: 100%;
+        height: 220px;
+    }
+    .row-two .srilanka {
+        width: 100%;
+        height: 200px;
+    }
+    .row-two .kashmir {
+        width: 100%;
+    }
+    .choose-card {
+        flex-direction: column;
+    }
+    .destination-item p {
+        top: 40%;
+        left: 31%;
+    }
+    .hidden-p{
+        display: block;
+    }
+    .hidden-p-one{
+        display: none;
+    }
+    .newsletter {
+        flex-direction: column;
+    }
+    .discount-item {
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        padding: 35px;
+        width: 88%;
+        height: 85%;
+        position: absolute;
+        top: 40px;
+        left: 25px;
+    }
+    .discount-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .newsletter-right img{
+        width: 100%;
+        height: 100%;
+    }
+    footer p {
+        width: 100%;
+    }
+    footer hr {
+        width: 100%;
+    }
+    .choose-item {
+        width: 100%;
+    }
+    .choose-item p {
+        width: 100%;
+    }
+    .newsletter-left {
+        padding: 25px;
+    }
+    .newsletter-left input {
+        width: 100%;
+    }
+    .newsletter-left p {
+        width: 100%;
+    }
+    .newsletter-left hr {
+        width: 100%;
+    }
+    .newsletter-left button {
+        width: 100%;
+    }
+    .header-wrapper h1 {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .header-wrapper p {
+        font-size: 14px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .header-wrapper {
+        padding: 30px 25px;
+    }
+    .menu ul li{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .tour-right{
+        width: 100%;
+    }
+    .tour-left{
+        width: 100%;
+    }
+    header{
+        margin-bottom: 100px;
+    }
+    .row-two .north-america {
+        width: 100%;
+    }
+    .row-two .north-america p {
+        left: 22%;
+    }
+    .buttons input, select {
+        width: 95%;
+    }
+    .buttons button {
+        width: 95%;
+    }
+}
