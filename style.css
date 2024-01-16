@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section, header{
+    width: 1140px;
+    margin: 0px auto;
+    font-family: 'Mulish', sans-serif;
+}
+.common-title{
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+.common-p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 643px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+.common-btn{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px 35px;
+    border: none;
+}
+header{
+    margin-bottom: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100px;
+    text-align: left;
+}
+.logo h2{
+    color: #131318;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.logo h2 span{
+    color: #FF5400;
+}
+.logo .logo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu ul li{
+    list-style-type: none;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    margin-right: 44px;
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+nav .menu ul li a:hover{
+    color: #FF5400;
+}
+
+.header-wrapper{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/Group 13 (1) (1).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    border-radius: 16px;
+    padding: 106px 185px;
+    text-align: center;
+}
+.header-wrapper h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+.header-wrapper p{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 676px;
+    padding-bottom: 48px;
+}
+.buttons{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons input, select{
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 15px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    width: 174px;
+}
+.buttons input:focus{
+    outline: none;
+}
+
+.buttons button{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 15px 22px;
+    bottom: none;
+    order: none;
+}
+
+/* tours Start  */
+.tours{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 100px;
+}
+.tours h2{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+.tours p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.tours .bottom-p{
+    color: #5A5A5D;
+    padding: 25px 0px 35px 0px;
+}
+
+.tours ul li{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 15px;
+    margin-left: 30px;
+}
+
+.destination{
+    margin-bottom: 100px;
+}
+.destination-item{
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    width: 573px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.destination-item img{
+    width: 100%;
+    height: 100%;
+}
+.destination-item p{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-weight: 800;
+
+}
+
+.row-one, .row-two, .row-three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+
+.row-two .srilanka{
+    width: 374px;
+}
+
+.row-two .north-america{
+    width: 474px;
+}
+
+.row-two .north-america p{
+    left: 33%;
+}
+.row-two .kashmir{
+    width: 274px;
+}
+/* Choose section Start */
+.choose{
+    margin-bottom: 100px;
+}
+.choose-card{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.choose-item{
+    padding: 32px;
+    width: 573px;
+}
+
+.choose-item h3{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 32px 0px 16px 0px;
+
+}
+
+.choose-item p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 486px;
+}
+.choose-item-one{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.choose-item-two{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.choose-item-three{
+    margin: 0px auto;
+    margin-top: 25px;
+    border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+/* Choose section End */
+
+
+/* Discounts section Start */
+.discount{
+    margin-bottom: 100px;
+}
+.discount-card-one, .discount-card-two, .discount-card-three{
+    border-radius: 16px;
+    height: 500px;
+}
+.discount-card-one{
+    background: url(./Images/Group\ 39.png), lightgray 50% / cover no-repeat;
+}
+.discount-card-two{
+    background: url(./Images/Group\ 40.png), lightgray 50% / cover no-repeat;
+}
+.discount-card-three{
+    background: url(./Images/Group\ 39.png), lightgray 50% / cover no-repeat;
+}
+.icon-date i {
+    width: 24px;
+    height: 24px;
+    color: #FF5400;
+}
+
+.icon-date span{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.all-icon-date{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.discount-card{
+    position: relative;
+    margin-bottom: 25px;
+}
+.discount-item{
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px ;
+    width: 579px;
+    height: 389px;
+    position: absolute;
+    top: 55px;
+    right: 55px;
+}
+.discount-item-two{
+    top: 55px;
+    left: 55px;
+
+}
+.discount-item h4{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 25px;
+}
+.discount-item p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 16px 0px;
+}
+.discount-item h5{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 35px;
+}
+
+.tours-btn{
+    margin-top: 32px;
+}
+/* Discounts section End */
+
+/* Newsletter section Start */
+.newsletter{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+}
+.newsletter-left{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+
+}
+
+.newsletter-left h4{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.newsletter-left p{
+    color: #5A5A5D;
+    font-size: 16px;
+    width: 350px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 15px;
+}
+.newsletter-left hr{
+    width: 393px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 24px 0px;
+}
+.newsletter-left input{
+    color: rgba(19, 19, 24, 0.30);
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 393px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+.newsletter-left input:focus{
+    outline: none;
+}
+.newsletter-left button{
+    width: 393px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+}
+.newsletter-right{
+    position: relative;
+}
+.newsletter-right .save{
+    border-radius: 16px;
+    background: #FF5400;
+    width: 324px;
+    transform: rotate(-19.628deg);
+    padding: 25px 40px;
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+}
+.newsletter-right .save span{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.newsletter-right .save h4{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+
+}
+/* Newsletter section End */
+
+/* Footer Start */
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 110px 0px;
+    text-align: center;
+    margin-top: 100px;
+}
+footer p{
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 769px;
+    margin: 0px auto;
+    padding: 15px 0px 33px 0px;
+}
+footer i{
+    color: #131318;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.footer-logo img{
+    width: 100px;
+    text-align: left;
+}
+.footer-logo h2{
+    color: #131318;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.footer-logo h2 span{
+    color: #FF5400;
+}
+
+footer hr{
+    width: 872px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    text-align: center;
+    margin: 0px auto;
+}
+
+footer h6{
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+/* Footer Start */
